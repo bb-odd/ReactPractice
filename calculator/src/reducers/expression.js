@@ -1,4 +1,4 @@
-import {evaluate} from "mathjs"
+import {electronMassDependencies, evaluate} from "mathjs"
 
 const expressionReducer = (state = '', action) => {
     switch(action.type){
@@ -10,7 +10,12 @@ const expressionReducer = (state = '', action) => {
                 return evaluate(state);
             }
             catch(err){
-                return 'NaN'
+                if(err instanceof SyntaxError){
+                    return '';
+                }else{
+                    return evaluate(state);
+                }
+                
             }
         case "DELETE":
             return '';
