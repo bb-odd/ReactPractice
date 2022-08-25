@@ -5,7 +5,6 @@ import actions from "../actions";
 
 
 const Button = props =>{
-    const expression = useSelector(state => state.expressionReducer);
     const dispatch = useDispatch();
 
     const checkInput = inp =>{
@@ -21,7 +20,7 @@ const Button = props =>{
     return(
         // button onclick will update input state
         // if prop is '=' then update the state to evaluate expression
-        <button onClick={() => {checkInput(props.value)}}>{expression}{props.value}</button>
+        <button onClick={() => {checkInput(props.value)}}>{props.value}</button>
         
     );
 }
