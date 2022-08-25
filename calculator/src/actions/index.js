@@ -1,20 +1,17 @@
-export const insert = num =>{
-
+const insert = num =>{
     return{
         type: 'INSERT',
         payload: num
     }
 }
 
-export const evaluate = () =>{
-
+const evaluate = () =>{
     return{
         type: 'EVALUATE'
     }
 }
 
-export const dlt = () =>{
-
+const dlt = () =>{
     return{
         type: 'DELETE'
     }
