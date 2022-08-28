@@ -1,11 +1,12 @@
-import React from './react';
+import React from 'react';
+import './Note.css';
 
-const Note = () =>{
+const Note = ({title, content, date, id}) =>{
 
     return(
         <div className='note'>
-            <h1></h1>
-            <a></a>
+            <h1>{title}</h1>
+            <a>{content}</a>
         </div>
     );
 }
