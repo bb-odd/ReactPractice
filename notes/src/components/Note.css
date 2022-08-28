@@ -1,6 +1,12 @@
 .note{
+    display: grid;
     width: 15rem;
     height: 15rem;
     color: black;
+    background-color: yellow;
+}
+
+.note-text-box{
+    resize: none;
     background-color: yellow;
 }
