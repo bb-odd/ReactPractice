@@ -4,6 +4,7 @@ import { nanoid } from 'nanoid';
 
 const AddNote = () =>{
     const [notes, setNotes] = useContext(NoteContext);
+    const [id, setId] = useState(0);
 
     const addNote = () =>{
         var today = new Date();
@@ -16,8 +17,9 @@ const AddNote = () =>{
             content: '',
             date: dd + '/' + mm + '/' + yyyy
         }
-
-        setNotes({...notes, 1: newNote});
+        
+        setNotes({...notes, [id] : newNote});
+        setId(id+1);
     }
 
     return(
