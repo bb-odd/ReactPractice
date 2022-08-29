@@ -7,16 +7,16 @@ const NoteList = () => {
     const [notes, setNotes] = useContext(NoteContext);
 
     function renderNotes(){
-        const keys = Array.from(Object.keys(notes));
-        // use keys to render each note from map
-        return keys.map(key => (
-                <Note title={notes[key].title} content={notes[key].content} date={notes[key].date} id={notes[key].id} />
+
+        //loops through pairs and renders notes using it
+        return Array.from(notes).map(([key,value]) => (
+                <Note title={value.title} content={value.content} date={value.date} id={key} />
                 )) 
     }
 
     return(
         <div>
-            {Object.keys(notes).length ? renderNotes() : null}
+            {notes.size ? renderNotes() : null}
         </div>
     );
 }

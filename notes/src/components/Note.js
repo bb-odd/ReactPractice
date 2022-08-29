@@ -1,11 +1,16 @@
-import React from 'react';
+import React,{ useState } from 'react';
+import DeleteNote from './DeleteNote';
 import './Note.css';
+
 
 const Note = ({title, content, date, id}) =>{
 
     return(
         <div className='note'>
-            <h3>{title}</h3>
+            <div>
+                <h3>{id}</h3>
+                <DeleteNote id={id}/>
+            </div>
             <textarea 
             className='note-text-box'
             rows='8'

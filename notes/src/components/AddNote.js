@@ -17,8 +17,8 @@ const AddNote = () =>{
             content: '',
             date: dd + '/' + mm + '/' + yyyy
         }
-        
-        setNotes({...notes, [id] : newNote});
+
+        setNotes(new Map(notes).set(id,newNote));
         setId(id+1);
     }
 
