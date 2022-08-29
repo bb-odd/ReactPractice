@@ -1,8 +1,14 @@
-.note-list{
+.notes{
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    width: 80vw;
+    height: auto;
+    flex-direction: row;
     flex-wrap: wrap;
-    height: 50vh;
-    width: 100vh;
 }
+
+@media screen and (max-width: 900px){
+    .notes{
+        justify-content: center;
+    }
+}
+

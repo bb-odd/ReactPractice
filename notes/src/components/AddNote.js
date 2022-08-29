@@ -1,6 +1,7 @@
 import React, {useState, useContext} from 'react';
 import { NoteContext } from '../contexts/NoteContext';
-import { nanoid } from 'nanoid';
+import { MdCreate } from 'react-icons/md';
+import './AddNote.css';
 
 const AddNote = () =>{
     const [notes, setNotes] = useContext(NoteContext);
@@ -23,7 +24,9 @@ const AddNote = () =>{
     }
 
     return(
-        <button onClick={addNote}>Create New Note</button>
+        <div className='note-button-container'>
+            <button className='note-button' onClick={addNote}><MdCreate size='1.3rem'/></button>
+        </div>        
     );
 }
 

@@ -1,0 +1,14 @@
+.note-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+}
+
+.note-button{
+    background-color: rgb(185, 185, 185);
+    border: none;
+    border-radius: 30px;
+    width: 4rem;
+    height: 5vh;
+}

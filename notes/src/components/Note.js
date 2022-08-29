@@ -1,4 +1,4 @@
-import React,{ useState, useContext } from 'react';
+import React,{ useContext } from 'react';
 import DeleteNote from './DeleteNote';
 import './Note.css';
 import { NoteContext } from '../contexts/NoteContext';

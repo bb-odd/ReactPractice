@@ -1,18 +1,29 @@
 .note{
     display: grid;
-    width: 15rem;
+    width: 20%;
+    min-width: 330px;
     height: 15rem;
     color: black;
-    background-color: yellow;
-    margin-top: 25px;
+    background-color: lightblue;
+    margin: 25px 15px 0px 15px;
+    border-radius: 5%;
 }
 
 .note-text-box{
     resize: none;
-    background-color: yellow;
+    background-color: lightblue;
+    border: none;
+    margin-left: 5px;
 }
 
 .note-title{
     resize: none;
-    background-color: yellow;
+    background-color: lightblue;
+    border: none;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.note-date{
+    margin-left: 10px;
 }
