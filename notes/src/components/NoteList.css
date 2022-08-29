@@ -1,0 +1,8 @@
+.note-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 50vh;
+    width: 100vh;
+}

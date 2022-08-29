@@ -4,9 +4,15 @@
     height: 15rem;
     color: black;
     background-color: yellow;
+    margin-top: 25px;
 }
 
 .note-text-box{
+    resize: none;
+    background-color: yellow;
+}
+
+.note-title{
     resize: none;
     background-color: yellow;
 }

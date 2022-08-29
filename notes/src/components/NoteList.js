@@ -1,6 +1,7 @@
 import React, { useState, useContext} from 'react';
 import Note from './Note';
 import { NoteContext } from '../contexts/NoteContext';
+import './NoteList.css';
 
 
 const NoteList = () => {
@@ -15,7 +16,7 @@ const NoteList = () => {
     }
 
     return(
-        <div>
+        <div className='note-list'>
             {notes.size ? renderNotes() : null}
         </div>
     );
